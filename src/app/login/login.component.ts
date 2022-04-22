@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  horse:string="./assets/images/download.jpg";
   LoginState:string="Login";
   IsAuth:boolean=false;
   Toggle(){

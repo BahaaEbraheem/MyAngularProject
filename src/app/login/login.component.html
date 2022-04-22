@@ -1,6 +1,8 @@
 <select (change)="MyFunction($event)">
     <option *ngFor="let car of cars">{{car}}</option>
 </select>
+<h1>this is My horse </h1>
+<img [src]="horse">
 <h1>{{name}}</h1>
 <input type="text" [(ngModel)]="name">
 <input type="button" [value]="LoginState" (click)="Toggle()">
