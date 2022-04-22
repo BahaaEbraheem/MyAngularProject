@@ -7,11 +7,17 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ArticleComponent } from './article/article.component';
+import { CategoryComponent } from './category/category.component';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ArticleComponent,
+    CategoryComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
