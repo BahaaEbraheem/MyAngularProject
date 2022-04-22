@@ -4,6 +4,7 @@ import { ArticleComponent } from './article/article.component';
 import { CategoryComponent } from './category/category.component';
 import { ClientComponent } from './client/client.component';
 import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,11 @@ const routes: Routes = [
   }, {
     path:'client',
     component:ClientComponent,
+    pathMatch:'full'
+  },
+  {
+    path:'**',
+    component:PageNotFoundComponent,
     pathMatch:'full'
   }
 ];

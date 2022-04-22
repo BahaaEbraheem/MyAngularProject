@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyServiceService } from '../my-service.service';
 
 @Component({
   selector: 'app-login',
@@ -27,12 +28,10 @@ export class LoginComponent implements OnInit {
    this.SelectedCar = event.target.value;
    alert(this.SelectedCar)
   }
-  constructor() {
-   
-  }
-  
-  ngOnInit() {
-   
+  constructor(private LoginService:MyServiceService) { }
+
+  ngOnInit(){
+    this.LoginService.SayHello("Login");
   }
   
 }

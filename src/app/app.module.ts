@@ -10,6 +10,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ArticleComponent } from './article/article.component';
 import { CategoryComponent } from './category/category.component';
 import { ClientComponent } from './client/client.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ClientComponent } from './client/client.component';
     LoginComponent,
     ArticleComponent,
     CategoryComponent,
-    ClientComponent
+    ClientComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

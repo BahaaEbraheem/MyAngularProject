@@ -1,1 +1,9 @@
 <p style="color:blue">Welcom in category page!</p>
+<form #MyForm="ngForm" (ngSubmit)="Submit()">
+    <label>id:</label>
+    <input type="number" name="Id" [(ngModel)]="cat.Id">
+    <label>name:</label>
+    <input type="text" name="Name" [(ngModel)]="cat.Name">
+    <input type="submit" value="Send Data" >
+
+</form>
