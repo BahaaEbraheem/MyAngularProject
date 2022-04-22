@@ -3,8 +3,17 @@
 </select>
 <h1>this is My horse </h1>
 <img [src]="horse">
-<h1>{{name}}</h1>
-<input type="text" [(ngModel)]="name">
+<h1>{{name | uppercase}}</h1>
+<div>
+    <label ngForm="name"></label>
+<input type="text" [(ngModel)]="name" >
+</div>
+<div>
+    <label ngForm="password"></label>
+    <input type="password" [(ngModel)]="Password">
+</div>
+
+
 <input type="button" [value]="LoginState" (click)="Toggle()">
 <div *ngIf="IsAuth then Welcom else Error"></div>
 <ng-template #Welcom>

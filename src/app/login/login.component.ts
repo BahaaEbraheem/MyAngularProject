@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   horse:string="./assets/images/download.jpg";
+
   LoginState:string="Login";
   IsAuth:boolean=false;
   Toggle(){
     this.IsAuth=!this.IsAuth;
+
     this.LoginState=this.IsAuth?"Logout":"Login";
 
   }
@@ -18,6 +20,7 @@ export class LoginComponent implements OnInit {
 
 
   name:string="Bahaa";
+  Password:string="Bahaa";
   cars=['Mercides','Toyota','Honda','KIA'];
   SelectedCar:string='';
   MyFunction(event:any){
