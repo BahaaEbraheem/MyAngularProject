@@ -6,17 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
- 
-  selectedDay: string = '';
-  selectedcolor: string = '';
 
-  selectChangeHandler (event: any) {
-    this.selectedDay = event.target.value;
+  LoginState:string="Login";
+  IsAuth:boolean=false;
+  Toggle(){
+    this.IsAuth=!this.IsAuth;
+    this.LoginState=this.IsAuth?"Logout":"Login";
+
   }
-  colors=['red','yellow','green'];
-  select (event: any) {
-    this.selectedcolor = event.target.value;
-    alert(this.selectedcolor);
+
+
+
+  name:string="Bahaa";
+  cars=['Mercides','Toyota','Honda','KIA'];
+  SelectedCar:string='';
+  MyFunction(event:any){
+   this.SelectedCar = event.target.value;
+   alert(this.SelectedCar)
   }
   constructor() {
    
