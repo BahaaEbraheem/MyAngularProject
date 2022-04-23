@@ -1,1 +1,14 @@
 <p style="color:gray">Welcom in client page!</p>
+<form [formGroup]="BahaaForm" (ngSubmit)="Submit()">
+    
+    <label>name:</label>
+    <input type="text" name="Name" formControlName="Name">
+    <label>age:</label>
+    <input type="text" name="Age" formControlName="Age">
+    <label>address:</label>
+    <input type="text" name="Address" formControlName="Address">
+    <label>job:</label>
+    <input type="text" name="Job" formControlName="Job">
+    <input type="submit" value="Send Data" >
+
+</form>
